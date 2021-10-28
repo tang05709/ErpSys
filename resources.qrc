@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/close.png</file>
+        <file>icons/exit.png</file>
+        <file>icons/winmax.png</file>
+        <file>icons/winmin.png</file>
+        <file>icons/branch_closed.png</file>
+        <file>icons/branch_open.png</file>
+        <file>icons/branch_end.png</file>
+        <file>icons/branch_more.png</file>
+        <file>icons/disable.png</file>
+        <file>icons/enable.png</file>
+        <file>icons/right.png</file>
+        <file>icons/wrong.png</file>
+        <file>icons/arrow_down1.png</file>
+        <file>icons/arrow_left1.png</file>
+        <file>icons/arrow_down2.png</file>
+        <file>icons/arrow_left2.png</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>images/erplogo.jpg</file>
+        <file>images/splash.jpg</file>
+    </qresource>
+    <qresource prefix="/style"/>
+    <qresource prefix="/stylesheet">
+        <file>style/main.qss</file>
+        <file>style/login.qss</file>
+    </qresource>
+</RCC>

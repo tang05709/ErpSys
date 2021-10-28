@@ -1,0 +1,30 @@
+QDialog {
+    background: #2b2b49;
+    color: #e3e2f4;
+    border-radius: 5px;
+}
+#btnLogin {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #5c60e3, stop:1 #4e9eda);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    color: #ffffff;
+}
+#btnClose {
+    border-radius: 3px;
+    color: #d42d00;
+    background: #383659;
+}
+QLabel {
+    background: #2b2b49;
+    font-size: 16px;
+    color: #ffffff;
+}
+QLineEdit {
+    height: 32px;
+    line-height: 32px;
+    border: none;
+    border-radius: 3px;
+    background: #21213a;
+}

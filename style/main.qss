@@ -1,0 +1,156 @@
+QWidget {
+    background: #0b0c13;
+    color: #e3e2f4;
+}
+#company {
+    background: #1c1b2d;
+    font-size: 16px;
+    font-weight: bold;
+}
+#home {
+    background: transparent;
+}
+#welcome {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 30px;
+}
+#btnAdd, .btnEdit, #btnSearch  {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #5c60e3, stop:1 #4e9eda);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+.btnDelete {
+    border-radius: 3px;
+    color: #000000;
+    background: #ec6f22;
+}
+#mainMenu {
+    background: #1c1b2d;
+    font-size: 14px;
+}
+#mainMenu::branch:has-siblings:adjoins-item {
+    border-image: url(:/icons/icons/branch_more.png) 0;
+}
+#mainMenu::branch:!has-children:!has-siblings:adjoins-item {
+    border-image: url(:/icons/icons/branch_end.png) 0;
+}
+#mainMenu::branch:has-children:!has-siblings:closed,
+#mainMenu::branch:closed:has-children:has-siblings {
+        border-image: none;
+        image: url(:/icons/icons/branch_closed.png);
+}
+#mainMenu::branch:open:has-children:!has-siblings,
+#mainMenu::branch:open:has-children:has-siblings  {
+        border-image: none;
+        image: url(:/icons/icons/branch_open.png);
+}
+#menuTreeList {
+    background-color: #161625;
+}
+#menuTreeList::item {
+    padding: 8px;
+}
+#menuTreeList::branch:has-children:!has-siblings:closed,
+#menuTreeList::branch:closed:has-children:has-siblings {
+        border-image: none;
+        image: url(:/icons/icons/arrow_left1.png);
+}
+#menuTreeList::branch:open:has-children:!has-siblings,
+#menuTreeList::branch:open:has-children:has-siblings  {
+        border-image: none;
+        image: url(:/icons/icons/arrow_down1.png);
+}
+QTableView {
+    background-color: #161625;
+    alternate-background-color: #2b2b49; /*行交替颜色*/
+}
+QTableView::item:!alternate{
+    background-color: #302f4e;    /*交替行的另一颜色*/
+}
+QTableView::item:hover, QTableView::item:selected {
+    background: #383659;
+}
+QHeaderView::section {
+    background: #1c1b2d;
+}
+#btnPageFirst, #btnPagePrev, #btnPageNext, #btnPageLast {
+    background: #1c1b2d;
+    border: none;
+    padding: 8px 15px;
+}
+#btnPageFirst:hover, #btnPagePrev:hover, #btnPageNext:hover, #btnPageLast:hover {
+    background: #181827;
+}
+#labPageCount {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+.searchInput {
+    width: 150px;
+    background: #21213a;
+    height: 32px;
+    line-height: 32px;
+    border: none;
+    border-radius: 3px;
+}
+.formclass {
+    background: #2b2b49;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.formclass QLabel {
+    background: #2b2b49;
+}
+.formclass #labFormTitle {
+    background: #383659;
+    padding: 20px 10px;
+    font-size: 16px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.formclass QLineEdit, .formclass QComboBox, .formclass QDateEdit, .formclass QDoubleSpinBox {
+    height: 32px;
+    line-height: 32px;
+    border: none;
+    border-radius: 3px;
+    background: #21213a;
+}
+.formclass QTextEdit {
+    line-height: 28px;
+    border: none;
+    border-radius: 3px;
+    background: #21213a;
+}
+.formclass QRadioButton {
+    height: 32px;
+    line-height: 32px;
+    background: #21213a;
+}
+.formclass QPushButton {
+    padding: 10px 25px;
+    border-radius: 15px;
+}
+.formclass .btnUpload {
+    background: #383659;
+    border-radius: 10px;
+}
+.formclass #btnFormSubmit {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #5c60e3, stop:1 #4e9eda);
+    border: none;
+}
+.formclass #btnFormSubmit:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #586ee0, stop:1 #518fdd);
+}
+.formclass #btnFormClose {
+    background: #383659;
+    border: 1px solid #5c60e3;
+}
+.formclass #btnFormClose:hover {
+    border: 1px solid #4e9bda;
+}
